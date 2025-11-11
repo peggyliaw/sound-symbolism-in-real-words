@@ -1,5 +1,5 @@
 # sound-symbolism-in-real-words
-Comparing human ratings (on 1. object shape and 2. sound shape) vs. embedding scores of shape (based on statistical co-occurrence)
+Comparing human ratings (on [1] object shape and [2] sound shape) vs. embedding scores of shape (based on statistical co-occurrence)
 
 ### Background
 Sound symbolism is the association between certain speech sounds with particular meanings. For example, words containing phonemes /l/, /m/, and /n/ are consistently judged as more round, compared to words containing phonemes /p/, /k/, and /t/. This phonomenon is known as the Bouba/Kiki effect.
