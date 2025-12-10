@@ -23,3 +23,27 @@ There was a weak correlation between people's judgements on shape of objects and
 The null findings in the analyses may suggest that the anchor words chosen for sound symbolism research (i.e., spiky, sharp, pointy vs. round, curved, smooth) do not reflect the shape difinitions people encounter in daily language use. 
 
 Future research can examine whether the contribution of sounds is different between words learned early in life vs. late in life.
+
+### Updated Findings
+Two changes made to the analyses (sound_symbolism_in_real_words_Qwen3):
+
+1. Lots of studies used Spearman correlations to compare similarities of ratings. It was proposed that Spearman is more appropriate than Pearson. Therefore, the new analysis used Spearman correlation to test associations.
+
+2. Utilized a newer version of embedding model called Qwen/Qwen3-Embedding-0.6B: https://huggingface.co/Qwen/Qwen3-Embedding-0.6B. Qwen3 has 1024 dimensions and is a trnasformer model, compared to 300 dimensions in word2vec, which is a neural network.
+
+With these two modifications, results changed quite a bit.
+
+```
+Combined Spearman Correlation Matrix with Word2Vec:
+                      shape      SoundScore    ShapeRating
+shape         1.000 (0.000)  -0.016 (0.505)  0.043 (0.070)
+SoundScore   -0.016 (0.505)   1.000 (0.000)  0.213 (0.000)
+ShapeRating   0.043 (0.070)   0.213 (0.000)  1.000 (0.000)
+```
+```
+Combined Spearman Correlation Matrix with Qwen3:
+                       shape     SoundScore    ShapeRating
+ShapeScoreAvg  1.000 (0.000)  0.043 (0.069)  0.111 (0.000)
+SoundScore     0.043 (0.069)  1.000 (0.000)  0.213 (0.000)
+ShapeRating    0.111 (0.000)  0.213 (0.000)  1.000 (0.000)
+```
