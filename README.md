@@ -31,15 +31,18 @@ Two changes made to the analyses (updated code in sound_symbolism_in_real_words_
 
 With these two modifications, results changed quite a bit.
 
+Word2Vec
 ```
-Combined Spearman Correlation Matrix with Word2Vec (original):
+Combined Spearman Correlation Matrix:
                       shape      SoundScore    ShapeRating
 shape         1.000 (0.000)  -0.016 (0.505)  0.043 (0.070)
 SoundScore   -0.016 (0.505)   1.000 (0.000)  0.213 (0.000)
 ShapeRating   0.043 (0.070)   0.213 (0.000)  1.000 (0.000)
 ```
+
+Qwen3
 ```
-Combined Spearman Correlation Matrix with Qwen3 (updated):
+Combined Spearman Correlation Matrix:
                        shape     SoundScore    ShapeRating
 ShapeScoreAvg  1.000 (0.000)  0.043 (0.069)  0.111 (0.000)
 SoundScore     0.043 (0.069)  1.000 (0.000)  0.213 (0.000)
